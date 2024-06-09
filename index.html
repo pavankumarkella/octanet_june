@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTaxi - Book Your Ride</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="QuickTaxi Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to QuickTaxi</h1>
+                <p>Your reliable taxi service</p>
+            </div>
+        </section>
+
+        <section class="booking-form">
+            <h2>Book a Ride</h2>
+            <form>
+                <div class="form-group">
+                    <label for="pickup">Pick-up Location:</label>
+                    <input type="text" id="pickup" name="pickup" required>
+                </div>
+                <div class="form-group">
+                    <label for="dropoff">Drop-off Location:</label>
+                    <input type="text" id="dropoff" name="dropoff" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>24/7 Service</li>
+                <li>Luxury Cars</li>
+                <li>Professional Drivers</li>
+                <li>Affordable Rates</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@quicktaxi.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 QuickTaxi. All rights reserved.</p>
+    </footer>
+</body>
+</html>

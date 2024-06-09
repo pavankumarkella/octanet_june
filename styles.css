@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background: #333;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://png.pngtree.com/background/20220725/original/pngtree-set-of-colorful-taxi-car-service-transport-vector-illustration-picture-image_1752657.jpg');
+}
+
+.hero {
+    background: url('https://www.vectorstock.com/royalty-free-vector/taxi-city-background-vector-2140120') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 20px 20px;  /* Adjust padding as needed */
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 20px 20px;
+}
+
+.hero-content {
+    animation: fadeIn 2s;
+}
+
+.hero-content h1 {
+    font-size: 2rem;  /* Adjust font size as needed */
+}
+
+.hero-content p {
+    font-size: 1.2rem;  /* Adjust font size as needed */
+}
+
+.booking-form {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    animation: slideUp 1s ease-out;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/284/012/original/taxi-car-skyscrapers-in-the-background-vector.jpg');
+}
+
+.booking-form h2 {
+    text-align: center;
+}
+
+.booking-form .form-group {
+    margin-bottom: 15px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.booking-form input:focus {
+    border-color: #333;
+}
+
+.booking-form button {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #555;
+}
+
+.services {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
+    font-size: 18px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.contact {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
